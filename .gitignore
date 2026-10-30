@@ -1,0 +1,45 @@
+# Zwischenstände der Bereinigung (jederzeit neu erzeugbar mit --save-intermediate)
+data/interim/
+
+# Altbestand der schrittweisen Bearbeitung (lokal behalten, nicht versionieren)
+veraltet/archive/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+# Virtuelle Umgebung: liegt in .venv.nosync (iCloud synchronisiert *.nosync nicht), .venv ist ein Symlink darauf
+.venv
+.venv.nosync/
+venv/
+.pytest_cache/
+.ruff_cache/
+build/
+dist/
+
+# macOS
+.DS_Store
+._*
+.AppleDouble
+.LSOverride
+Icon?
+*.icloud
+
+# Office-Sperrdateien
+~$*
+
+# Editor
+.vscode/
+.idea/
+
+# Literatur-PDFs (urheberrechtlich geschützt, Verwaltung in Zotero)
+docs/literatur/
+
+# Textentwürfe der Masterarbeit gehören nicht ins Repository
+text/
+*.docx
+
+# ESS-Daten: nicht im Repository, Download siehe data/raw/README.md
+data/raw/*
+!data/raw/README.md
+data/processed/*.csv

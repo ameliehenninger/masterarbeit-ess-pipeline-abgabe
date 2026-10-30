@@ -1,0 +1,10 @@
+unterfrage,aussage,erwartungswert,gezogen,gezogen_anteil_neuziehungen,haengt_von_wahl_ab
+1a,Twin genauer als fremder Twin (MAE),True,True,1.0,False
+1a,Twin genauer als Demografie-Mittelwert (MAE),False,False,0.0,False
+A3,Mehrheit der Twins genauer als ihr Demografie-Mittelwert (MAE),False,False,0.0,False
+1b,Twin enthält Information über die Person (individuelle Abweichung über fremdem Twin),True,True,1.0,False
+1b,Twin trifft die individuelle Abweichung mindestens so gut wie der Demografie-Mittelwert,True,False,0.0,True
+A3,Mehrheit der Twins trifft die individuelle Abweichung besser als ihr Demografie-Mittelwert,True,False,0.0,True
+1b′,Twin trennt die Personen bei der Mehrheit der Fragen besser als der Demografie-Mittelwert,True,False,0.0,True
+1c,"Fehler bei der Mehrheit der Fragen gerichtet, überwiegend nach unten",True,True,1.0,False
+1d,"Schulabschluss hängt spürbar mit dem MAE zusammen (η² ≥ 0,01)",True,True,1.0,False

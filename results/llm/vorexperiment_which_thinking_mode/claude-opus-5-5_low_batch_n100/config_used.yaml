@@ -1,0 +1,37 @@
+run_name: claude-opus-5-5_low_batch_n100
+persons:
+  n: 100
+  selection: first
+  seed: 42
+model:
+  provider: anthropic
+  name: claude-opus-5-5
+  max_tokens: 16000
+  effort: low
+  thinking: adaptive
+  price_per_mtok:
+    input: 2.0
+    output: 10.0
+prompt:
+  anti_collapse_instruction: true
+  verbalized_sampling: true
+  exclude_profile_columns:
+  - id
+  - idno
+  - dweight
+  - pspwght
+  - pweight
+  - anweight
+  - domain
+  - prob
+  - stratum
+  - psu
+answer:
+  sampling_seed: 42
+  probability_tolerance: 0.02
+run:
+  max_attempts: 3
+  parallel_requests: 4
+  reuse_existing: true
+  mode: batch
+  batch_poll_seconds: 30

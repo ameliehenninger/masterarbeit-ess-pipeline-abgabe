@@ -1,0 +1,12 @@
+2026-10-15 23:49:16 INFO    Start: run_llm.py --config config/llm_experiment_haiku_medium_disabled.yaml --stages analyse, Config config/llm_experiment_haiku_medium_disabled.yaml, Stufen analyse
+2026-10-15 23:49:17 INFO    Verteilungsanalyse: results/llm/claude-haiku-5-5_medium_think-disabled_n100/verteilungen_report.md (Entropie Mittel 2.018 Bit, scharf 0.1 %, flach 13.3 %)
+2026-10-15 23:49:17 INFO    Fertig in 1.7 s
+2026-10-15 23:49:58 INFO    Start: run_llm.py --config config/llm_experiment_haiku_medium_disabled.yaml --stages analyse, Config config/llm_experiment_haiku_medium_disabled.yaml, Stufen analyse
+2026-10-15 23:50:00 INFO    Verteilungsanalyse: results/llm/claude-haiku-5-5_medium_think-disabled_n100/verteilungen_report.md (Entropie Mittel 2.018 Bit, scharf 0.1 %, flach 13.3 %)
+2026-10-15 23:50:00 INFO    Fertig in 1.7 s
+2026-10-18 20:46:52 INFO    Start: run_llm.py --config config/vorexperiment_which_thinking_mode/haiku_medium_disabled.yaml --stages score, Config config/vorexperiment_which_thinking_mode/haiku_medium_disabled.yaml, Stufen score
+2026-10-18 20:46:52 INFO    Scores berechnet: results/llm/vorexperiment_which_thinking_mode/claude-haiku-5-5_medium_think-disabled_n100/scores_LLM.csv (100 Personen)
+2026-10-18 20:47:25 INFO    Start: run_llm.py --config config/vorexperiment_which_thinking_mode/haiku_medium_disabled.yaml --stages score, Config config/vorexperiment_which_thinking_mode/haiku_medium_disabled.yaml, Stufen score
+2026-10-18 20:47:25 INFO    Scores berechnet: results/llm/vorexperiment_which_thinking_mode/claude-haiku-5-5_medium_think-disabled_n100/scores_LLM.csv (100 Personen)
+2026-10-18 20:47:27 INFO    3 Abbildungen in results/llm/vorexperiment_which_thinking_mode/claude-haiku-5-5_medium_think-disabled_n100/figures
+2026-10-18 20:47:27 INFO    Fertig in 1.7 s

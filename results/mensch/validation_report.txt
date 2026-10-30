@@ -1,0 +1,77 @@
+==============================================================================
+PRÜFBERICHT ess_scores.csv
+Profil:     ESS_profil_DE.csv
+Fragebogen: ESS_fragebogen_DE.csv
+Scores:     ess_scores.csv   (hedonism_to='openness')
+==============================================================================
+
+A. Struktur und ID-Integrität
+[  BESTANDEN   ] 1  Gleiche Zeilenzahl (Profil, Fragebogen, Scores)
+                 je 2262 Zeilen
+[  BESTANDEN   ] 2  Eindeutige IDs in allen drei Dateien
+[  BESTANDEN   ] 3  Identische ID-Mengen
+[  BESTANDEN   ] 4  Gleiche ID-Reihenfolge Scores == Fragebogen
+[  BESTANDEN   ] 5  Eingaben unverändert (SHA-256 vor/nach Lauf)
+                 ESS_profil_DE.csv: 2afe3d98b215427e…
+                 ESS_fragebogen_DE.csv: 597df74dca550aa3…
+[  BESTANDEN   ] 6  Vollständigkeit (18 Spalten, keine NaN)
+                 18 Spalten, keine NaN
+
+B. Eingabevalidierung
+[  BESTANDEN   ] 7  Alle 21 Item-Spalten vorhanden (sonst Fehler)
+                 alle 21 Spalten vorhanden; fehlende Spalte -> Fehler
+[  BESTANDEN   ] 8  Item-Werte ganzzahlig in {1..6}, keine leeren Zellen
+                 alle Werte ganzzahlig 1–6; Werte 7 / leer / 2.5 / 0 -> Fehler mit IDs
+
+C. Rechenkorrektheit
+[  BESTANDEN   ] 9  Unabhängige Zweitberechnung per ID (50 Stichproben, Schleife)
+                 50 IDs (Seed 20261014), max. Abweichung 0.00e+00
+[  BESTANDEN   ] 10 Merge-Test (Fragebogen ⋈ Scores per ID, Neuberechnung)
+                 2262 Zeilen gemergt, max. Abweichung 0.00e+00
+[  BESTANDEN   ] 11 Summen-Identität 2·SD+…+2·BE+3·UN = 0
+                 max |2·SD+…+2·BE+3·UN| = 9.77e-15
+[  BESTANDEN   ] 12 Higher-Order ↔ Kontrollformeln, x/y-Koordinaten
+                 OPEN: max. Abweichung 0.00e+00
+                 CONS: max. Abweichung 0.00e+00
+                 SELFENH: max. Abweichung 0.00e+00
+                 SELFTRANS: max. Abweichung 0.00e+00
+                 x: 0.00e+00, y: 0.00e+00
+[  BESTANDEN   ] 13 MRAT = 7 − Zeilenmittel der Roh-Items
+                 max. Abweichung 8.88e-16
+[  BESTANDEN   ] 14 Synthetische Testfälle (konstant, Handrechnung, hedonism_to)
+                 konstante Antworten 1..6 -> alle Scores, x, y = 0
+                 Handgerechnete Person (MRAT = 29/7, x = 3.5, y = 4/3) exakt getroffen
+                 hedonism_to: openness (OPEN 6 / SELFENH 4 Items), both (6 / 6), none (4 / 4) korrekt
+
+D. Plausibilität (Warnung statt Abbruch)
+[  BESTANDEN   ] 15 Wertebereiche (MRAT in [1,6], Scores in [−5,5], Auffälligkeiten > |3|)
+                 MRAT-Bereich [1.952, 5.762]
+                 Auffälligkeiten |Wert| > 3: 381 Zellen (328 Personen): {'ST': 31, 'HE': 2, 'AC': 16, 'PO': 21, 'SE': 1, 'CO': 7, 'TR': 6, 'SELFENH': 7, 'x': 275, 'y': 15}
+[  BESTANDEN   ] 16 Wertehierarchie (BE, UN oben; PO unten)
+                 Rangfolge: BE +1.010, UN +0.768, SD +0.633, SE +0.387, HE +0.034, TR -0.043, CO -0.488, AC -0.701, ST -0.847, PO -1.138
+[  BESTANDEN   ] 17 Erwartete Gegensätze (negative Korrelationen)
+                 r(OPEN, CONS) = -0.7064
+                 r(SELFENH, SELFTRANS) = -0.4828
+[  BESTANDEN   ] 18 Zusammenfassung
+                               n  Mittel      SD     Min     Max
+                 MRAT       2262 +4.2130 +0.4637 +1.9524 +5.7619
+                 SD         2262 +0.6330 +0.7225 -2.1667 +2.7619
+                 ST         2262 -0.8467 +1.0496 -3.8571 +2.0000
+                 HE         2262 +0.0335 +0.8777 -3.1429 +2.5238
+                 AC         2262 -0.7012 +0.9526 -3.7143 +2.0000
+                 PO         2262 -1.1378 +0.8438 -3.6190 +1.8571
+                 SE         2262 +0.3874 +0.8390 -3.7619 +2.6190
+                 CO         2262 -0.4877 +0.9630 -3.5238 +2.3333
+                 TR         2262 -0.0428 +0.9026 -3.4762 +2.5238
+                 BE         2262 +1.0096 +0.5809 -1.8571 +2.9048
+                 UN         2262 +0.7685 +0.6311 -1.8095 +2.9048
+                 OPEN       2262 -0.0601 +0.5785 -2.2619 +2.1905
+                 CONS       2262 -0.0477 +0.6245 -2.3333 +1.8571
+                 SELFENH    2262 -0.9195 +0.7269 -3.3810 +1.1310
+                 SELFTRANS  2262 +0.8891 +0.4922 -0.7024 +2.9048
+                 x          2262 +1.8086 +1.0565 -1.5833 +5.0000
+                 y          2262 -0.0124 +1.1113 -3.5000 +4.0000
+
+==============================================================================
+ERGEBNIS: 18 bestanden, 0 fehlgeschlagen, 0 Warnungen (von 18 Tests)
+==============================================================================

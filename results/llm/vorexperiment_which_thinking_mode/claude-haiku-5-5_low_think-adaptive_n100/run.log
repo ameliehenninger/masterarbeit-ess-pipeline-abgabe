@@ -1,0 +1,12 @@
+2026-10-15 23:49:13 INFO    Start: run_llm.py --config config/llm_experiment_haiku_low_adaptive.yaml --stages analyse, Config config/llm_experiment_haiku_low_adaptive.yaml, Stufen analyse
+2026-10-15 23:49:14 INFO    Verteilungsanalyse: results/llm/claude-haiku-5-5_low_think-adaptive_n100/verteilungen_report.md (Entropie Mittel 2.058 Bit, scharf 0.1 %, flach 20.3 %)
+2026-10-15 23:49:14 INFO    Fertig in 1.5 s
+2026-10-15 23:49:56 INFO    Start: run_llm.py --config config/llm_experiment_haiku_low_adaptive.yaml --stages analyse, Config config/llm_experiment_haiku_low_adaptive.yaml, Stufen analyse
+2026-10-15 23:49:57 INFO    Verteilungsanalyse: results/llm/claude-haiku-5-5_low_think-adaptive_n100/verteilungen_report.md (Entropie Mittel 2.058 Bit, scharf 0.1 %, flach 20.3 %)
+2026-10-15 23:49:57 INFO    Fertig in 1.6 s
+2026-10-18 20:46:50 INFO    Start: run_llm.py --config config/vorexperiment_which_thinking_mode/haiku_low_adaptive.yaml --stages score, Config config/vorexperiment_which_thinking_mode/haiku_low_adaptive.yaml, Stufen score
+2026-10-18 20:46:50 INFO    Scores berechnet: results/llm/vorexperiment_which_thinking_mode/claude-haiku-5-5_low_think-adaptive_n100/scores_LLM.csv (100 Personen)
+2026-10-18 20:47:20 INFO    Start: run_llm.py --config config/vorexperiment_which_thinking_mode/haiku_low_adaptive.yaml --stages score, Config config/vorexperiment_which_thinking_mode/haiku_low_adaptive.yaml, Stufen score
+2026-10-18 20:47:20 INFO    Scores berechnet: results/llm/vorexperiment_which_thinking_mode/claude-haiku-5-5_low_think-adaptive_n100/scores_LLM.csv (100 Personen)
+2026-10-18 20:47:21 INFO    3 Abbildungen in results/llm/vorexperiment_which_thinking_mode/claude-haiku-5-5_low_think-adaptive_n100/figures
+2026-10-18 20:47:21 INFO    Fertig in 1.8 s

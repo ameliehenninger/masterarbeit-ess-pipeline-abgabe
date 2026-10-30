@@ -1,0 +1,6 @@
+2026-10-18 20:46:54 INFO    Start: run_llm.py --config config/vorexperiment_which_thinking_mode/opus.yaml --stages score, Config config/vorexperiment_which_thinking_mode/opus.yaml, Stufen score
+2026-10-18 20:46:54 INFO    Scores berechnet: results/llm/vorexperiment_which_thinking_mode/claude-opus-5-5_medium/scores_LLM.csv (10 Personen)
+2026-10-18 20:47:30 INFO    Start: run_llm.py --config config/vorexperiment_which_thinking_mode/opus.yaml --stages score, Config config/vorexperiment_which_thinking_mode/opus.yaml, Stufen score
+2026-10-18 20:47:30 INFO    Scores berechnet: results/llm/vorexperiment_which_thinking_mode/claude-opus-5-5_medium/scores_LLM.csv (10 Personen)
+2026-10-18 20:47:32 INFO    3 Abbildungen in results/llm/vorexperiment_which_thinking_mode/claude-opus-5-5_medium/figures
+2026-10-18 20:47:32 INFO    Fertig in 1.9 s

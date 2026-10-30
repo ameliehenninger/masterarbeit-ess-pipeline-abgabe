@@ -1,0 +1,72 @@
+2026-10-16 04:22:20 INFO    Start: run_llm.py --config config/llm_experiment_haiku_low_batch_all.yaml, Config config/llm_experiment_haiku_low_batch_all.yaml, Stufen fill score plot analyse
+2026-10-16 04:22:24 INFO    Befrage 2262 Person(en) mit claude-haiku-5-5 über die Batch API
+2026-10-16 04:22:49 INFO    HTTP Request: POST https://api.anthropic.com/v1/messages/batches "HTTP/1.1 200 OK"
+2026-10-16 04:22:49 INFO    Batch msgbatch_016pYd4YywTSoJBt36bEfEZp abgeschickt (2262 Anfragen)
+2026-10-16 04:23:20 INFO    HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_016pYd4YywTSoJBt36bEfEZp "HTTP/1.1 200 OK"
+2026-10-16 04:23:20 INFO    Batch msgbatch_016pYd4YywTSoJBt36bEfEZp: in_progress – fertig 0, in Arbeit 2262, Fehler 0
+2026-10-16 04:23:50 INFO    HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_016pYd4YywTSoJBt36bEfEZp "HTTP/1.1 200 OK"
+2026-10-16 04:23:50 INFO    Batch msgbatch_016pYd4YywTSoJBt36bEfEZp: in_progress – fertig 0, in Arbeit 2262, Fehler 0
+2026-10-16 04:24:20 INFO    HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_016pYd4YywTSoJBt36bEfEZp "HTTP/1.1 200 OK"
+2026-10-16 04:24:20 INFO    Batch msgbatch_016pYd4YywTSoJBt36bEfEZp: in_progress – fertig 0, in Arbeit 2262, Fehler 0
+2026-10-16 04:24:51 INFO    HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_016pYd4YywTSoJBt36bEfEZp "HTTP/1.1 200 OK"
+2026-10-16 04:24:51 INFO    Batch msgbatch_016pYd4YywTSoJBt36bEfEZp: in_progress – fertig 0, in Arbeit 2262, Fehler 0
+2026-10-16 04:25:21 INFO    HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_016pYd4YywTSoJBt36bEfEZp "HTTP/1.1 200 OK"
+2026-10-16 04:25:21 INFO    Batch msgbatch_016pYd4YywTSoJBt36bEfEZp: in_progress – fertig 0, in Arbeit 2262, Fehler 0
+2026-10-16 04:25:51 INFO    HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_016pYd4YywTSoJBt36bEfEZp "HTTP/1.1 200 OK"
+2026-10-16 04:25:51 INFO    Batch msgbatch_016pYd4YywTSoJBt36bEfEZp: in_progress – fertig 0, in Arbeit 2262, Fehler 0
+2026-10-16 04:26:22 INFO    HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_016pYd4YywTSoJBt36bEfEZp "HTTP/1.1 200 OK"
+2026-10-16 04:26:22 INFO    Batch msgbatch_016pYd4YywTSoJBt36bEfEZp: in_progress – fertig 0, in Arbeit 2262, Fehler 0
+2026-10-16 04:26:52 INFO    HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_016pYd4YywTSoJBt36bEfEZp "HTTP/1.1 200 OK"
+2026-10-16 04:26:52 INFO    Batch msgbatch_016pYd4YywTSoJBt36bEfEZp: in_progress – fertig 0, in Arbeit 2262, Fehler 0
+2026-10-16 04:27:22 INFO    HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_016pYd4YywTSoJBt36bEfEZp "HTTP/1.1 200 OK"
+2026-10-16 04:27:22 INFO    Batch msgbatch_016pYd4YywTSoJBt36bEfEZp: in_progress – fertig 0, in Arbeit 2262, Fehler 0
+2026-10-16 04:27:53 INFO    HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_016pYd4YywTSoJBt36bEfEZp "HTTP/1.1 200 OK"
+2026-10-16 04:27:53 INFO    Batch msgbatch_016pYd4YywTSoJBt36bEfEZp: in_progress – fertig 0, in Arbeit 2262, Fehler 0
+2026-10-16 04:28:23 INFO    HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_016pYd4YywTSoJBt36bEfEZp "HTTP/1.1 200 OK"
+2026-10-16 04:28:23 INFO    Batch msgbatch_016pYd4YywTSoJBt36bEfEZp: in_progress – fertig 0, in Arbeit 2262, Fehler 0
+2026-10-16 04:28:53 INFO    HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_016pYd4YywTSoJBt36bEfEZp "HTTP/1.1 200 OK"
+2026-10-16 04:28:53 INFO    Batch msgbatch_016pYd4YywTSoJBt36bEfEZp: in_progress – fertig 0, in Arbeit 2262, Fehler 0
+2026-10-16 04:29:24 INFO    HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_016pYd4YywTSoJBt36bEfEZp "HTTP/1.1 200 OK"
+2026-10-16 04:29:24 INFO    Batch msgbatch_016pYd4YywTSoJBt36bEfEZp: in_progress – fertig 0, in Arbeit 2262, Fehler 0
+2026-10-16 04:29:54 INFO    HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_016pYd4YywTSoJBt36bEfEZp "HTTP/1.1 200 OK"
+2026-10-16 04:29:54 INFO    Batch msgbatch_016pYd4YywTSoJBt36bEfEZp: in_progress – fertig 0, in Arbeit 2262, Fehler 0
+2026-10-16 04:30:24 INFO    HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_016pYd4YywTSoJBt36bEfEZp "HTTP/1.1 200 OK"
+2026-10-16 04:30:24 INFO    Batch msgbatch_016pYd4YywTSoJBt36bEfEZp: ended – fertig 2262, in Arbeit 0, Fehler 0
+2026-10-16 04:30:25 INFO    HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_016pYd4YywTSoJBt36bEfEZp "HTTP/1.1 200 OK"
+2026-10-16 04:30:25 INFO    HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_016pYd4YywTSoJBt36bEfEZp/results "HTTP/1.1 200 OK"
+2026-10-16 04:30:26 INFO    Batch msgbatch_016pYd4YywTSoJBt36bEfEZp beendet nach 467 s: 2262 Antworten, 0 ohne Antwort
+2026-10-16 04:30:40 INFO    Fertig: 2262/2262 erfolgreich -> results/llm/claude-haiku-5-5_low_batch_all/fragebogen_LLM.csv
+2026-10-16 04:30:40 INFO    Scores berechnet: results/llm/claude-haiku-5-5_low_batch_all/scores_LLM.csv (2262 Personen)
+2026-10-16 04:30:43 INFO    3 Abbildungen in results/llm/claude-haiku-5-5_low_batch_all/figures
+2026-10-16 04:31:20 INFO    Verteilungsanalyse: results/llm/claude-haiku-5-5_low_batch_all/verteilungen_report.md (Entropie Mittel 2.035 Bit, scharf 0.3 %, flach 15.2 %)
+2026-10-16 04:31:20 INFO    Fertig in 539.7 s
+2026-10-16 13:01:46 INFO    Start: run_llm.py --config config/llm_experiment_haiku_low_batch_all.yaml --stages auswertung, Config config/llm_experiment_haiku_low_batch_all.yaml, Stufen auswertung
+2026-10-16 13:01:50 INFO    Auswertung claude-haiku-5-5_low_batch_all: 2262 Twin-Paare
+2026-10-16 13:01:54 INFO    Ebene 1: MAE 1.343 (Zufallspaarung 1.442), Spearman 0.356
+2026-10-16 13:02:18 INFO    Ebene 2: k = 2, ARI 0.077 / 0.075
+2026-10-16 13:02:18 INFO    Auswertung geschrieben: results/llm/claude-haiku-5-5_low_batch_all/auswertung/auswertung_report.md
+2026-10-16 13:02:18 INFO    Fertig in 31.7 s
+2026-10-16 13:03:03 INFO    Start: run_llm.py --config config/llm_experiment_haiku_low_batch_all.yaml --stages auswertung, Config config/llm_experiment_haiku_low_batch_all.yaml, Stufen auswertung
+2026-10-16 13:03:06 INFO    Auswertung claude-haiku-5-5_low_batch_all: 2262 Twin-Paare
+2026-10-16 13:03:10 INFO    Ebene 1: MAE 1.343 (Zufallspaarung 1.442), Spearman 0.356
+2026-10-16 13:03:35 INFO    Ebene 2: k = 2, ARI 0.077 / 0.075
+2026-10-16 13:03:35 INFO    Auswertung geschrieben: results/llm/claude-haiku-5-5_low_batch_all/auswertung/auswertung_report.md
+2026-10-16 13:03:35 INFO    Fertig in 31.6 s
+2026-10-16 13:04:46 INFO    Start: run_llm.py --config config/llm_experiment_haiku_low_batch_all.yaml --stages auswertung, Config config/llm_experiment_haiku_low_batch_all.yaml, Stufen auswertung
+2026-10-16 13:04:48 INFO    Auswertung claude-haiku-5-5_low_batch_all: 2262 Twin-Paare
+2026-10-16 13:04:52 INFO    Ebene 1: MAE 1.343 (Zufallspaarung 1.442), Spearman 0.356
+2026-10-16 13:05:17 INFO    Ebene 2: k = 2, ARI 0.077 / 0.075
+2026-10-16 13:05:17 INFO    Auswertung geschrieben: results/llm/claude-haiku-5-5_low_batch_all/auswertung/auswertung_report.md
+2026-10-16 13:05:17 INFO    Fertig in 31.4 s
+2026-10-16 14:54:22 INFO    Start: run_llm.py --config config/llm_experiment_haiku_low_batch_all.yaml --stages analyse, Config config/llm_experiment_haiku_low_batch_all.yaml, Stufen analyse
+2026-10-16 14:54:53 INFO    Verteilungsanalyse: results/llm/claude-haiku-5-5_low_batch_all/verteilungen_report.md (Entropie Mittel 2.035 Bit, scharf 0.3 %, flach 15.2 %)
+2026-10-16 14:54:53 INFO    Fertig in 31.7 s
+2026-10-18 20:46:49 INFO    Start: run_llm.py --config config/llm_experiment.yaml --stages score, Config config/llm_experiment.yaml, Stufen score
+2026-10-18 20:46:50 INFO    Scores berechnet: results/llm/claude-haiku-5-5_low_batch_all/scores_LLM.csv (2262 Personen)
+2026-10-18 20:47:17 INFO    Start: run_llm.py --config config/llm_experiment.yaml --stages score, Config config/llm_experiment.yaml, Stufen score
+2026-10-18 20:47:18 INFO    Scores berechnet: results/llm/claude-haiku-5-5_low_batch_all/scores_LLM.csv (2262 Personen)
+2026-10-18 20:47:19 INFO    3 Abbildungen in results/llm/claude-haiku-5-5_low_batch_all/figures
+2026-10-18 20:47:19 INFO    Fertig in 2.1 s
+2026-10-18 20:47:43 INFO    Start: run_llm.py --stages auswertung, Config config/llm_experiment.yaml, Stufen auswertung
+2026-10-18 20:48:34 INFO    Auswertung: results/auswertung/claude-haiku-5-5_low_batch_all/report.md
+2026-10-18 20:48:34 INFO    Fertig in 51.1 s

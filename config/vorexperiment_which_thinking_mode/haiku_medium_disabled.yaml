@@ -1,0 +1,39 @@
+# Phase 3: Ein Sprachmodell füllt den PVQ-21 in der Rolle einer ESS-Person aus.
+# Alle Stellschrauben des Experiments stehen hier.  Start:  python run_llm.py --config config/vorexperiment_which_thinking_mode/haiku_medium_disabled.yaml
+# Vorexperiment (100 Personen): Welches Modell und welcher Thinking-Modus, siehe DOKUMENTATION.md, Abschnitt 4.7.
+# Ergebnisse landen in results/llm/<run_name>/ (siehe run_report.md dort).
+
+# Ordnername unter results/llm/ (null = Modellname)
+run_name: vorexperiment_which_thinking_mode/claude-haiku-5-5_medium_think-disabled_n100
+
+persons:
+  n: 100               # Anzahl Personen aus ESS_profil_DE.csv (null = alle 2262)
+  selection: first    # first = die ersten n Zeilen, random = Zufallsauswahl
+  seed: 42            # Seed für selection: random
+
+model:
+  provider: anthropic
+  name: claude-haiku-5-5   # günstigstes Claude-Modell; austauschbar, z. B. claude-sonnet-5-5
+  max_tokens: 16000        # Obergrenze je Antwort, inkl. Denk-Tokens
+  effort: medium           # low | medium | high | xhigh | max (Denktiefe)
+  thinking: disabled       # adaptive | disabled (disabled bei Haiku 5.5 nur bis effort high, bei Opus 5.5 nie)
+  price_per_mtok:          # USD je 1 Mio. Tokens – nur für die Kostenschätzung im Bericht
+    input: 0.10
+    output: 0.50
+
+prompt:
+  anti_collapse_instruction: true    # direktive Anweisung gegen Varianzkollaps (Experiment 2)
+  verbalized_sampling: true          # Technik 2: Modell gibt je Frage eine Verteilung über die 6 Optionen an,
+                                     # die finale Antwort zieht das Programm (false = Modell antwortet direkt)
+  # sieht das LLM nicht: idno = Befragtennummer (steckt in der ID); Gewichte und Stichprobendesign
+  # bleiben für die Auswertung in den Daten, verweisen im Prompt aber nur auf den ESS-Datensatz
+  exclude_profile_columns: [id, idno, dweight, pspwght, pweight, anweight, domain, prob, stratum, psu]
+
+answer:
+  sampling_seed: 42           # Ziehung aus der verbalisierten Verteilung: gleiche Seed + ID -> gleiche Ziehung
+  probability_tolerance: 0.02 # Summe der 6 Wahrscheinlichkeiten muss 1 ± Toleranz sein
+
+run:
+  max_attempts: 3          # Versuche je Person, falls die Antwort die Prüfungen nicht besteht
+  parallel_requests: 4     # gleichzeitige API-Aufrufe
+  reuse_existing: true     # Personen mit erfolgreichem Log und identischem Prompt nicht erneut abfragen

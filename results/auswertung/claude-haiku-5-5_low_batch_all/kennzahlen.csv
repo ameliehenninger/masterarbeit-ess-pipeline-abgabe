@@ -1,0 +1,132 @@
+unterfrage,kennzahl,wert,vergleich
+1a,MAE Zufall 1–6,1.8751912200188063,
+1a,MAE Zufallspaarung (fremder Twin),1.1761989921503473,
+1a,MAE LLM-Twin,1.0632923938246177,
+1a,MAE Demografie-Zellmittel,0.9236802503705948,
+1a,MAE Mittelprofil (ESS-Durchschnitt),0.9457879590048255,
+1a,RMSE LLM-Twin,1.3350522045243636,"Zufallspaarung 1.463, Mittelprofil 1.154"
+1a,Anteil exakter Treffer (gezogen),0.2546208580691339,
+1a,MAE Twin gezogen,1.342848722159067,
+1a,Anteil Twins genauer als Zufall 1–6,0.9991158267020336,
+1a,Anteil Twins genauer als Zufallspaarung,0.7435897435897436,
+1a,Anteil Twins genauer als Demografie-Zellmittel,0.2475685234305924,
+1a,Anteil Twins genauer als Mittelprofil,0.2749778956675508,
+1a,Wilcoxon Twin vs. Zufallspaarung p,1.9977634217219126e-148,
+1b,ρ Profil LLM-Twin (Mittel),0.49621243122019776,
+1b,ρ Profil Zufallspaarung (Mittel),0.3973526897999778,
+1b,ρ Profil Zellmittel (Mittel),0.5752784092020119,
+1b,ρ Profil Mittelprofil (Mittel),0.5626721978574134,
+1b,Anteil ρ > 0 LLM-Twin,0.9699381078691424,
+1b,Anteil ρ undefiniert,0.0,
+1b,ρ Abweichungsprofil LLM-Twin (Mittel),0.19126563092080334,
+1b,ρ Abweichungsprofil Zufallspaarung (Mittel),0.0006320403734196839,
+1b,ρ Abweichungsprofil Zellmittel (Mittel),0.17135106273037304,
+1b,Anteil ρ Abweichungsprofil > 0,0.7502210433244916,
+1b,Wilcoxon Abweichungs-ρ Twin vs. Zufallspaarung p,7.626405219925826e-149,
+1b,Anteil Twins mit Abweichungs-ρ > Zellmittel,0.5137046861184792,
+1b,Wilcoxon Abweichungs-ρ Twin vs. Zellmittel p,0.015775933832090812,
+1b,ρ Profil LLM-Twin gezogen (Mittel),0.3555954601731301,
+1b,ρ Abweichungsprofil LLM-Twin gezogen (Mittel),0.11514060651991687,
+1b′,Items gesichert besser als Zellmittel (Bootstrap-KI der Differenz > 0),14.0,
+1b′,Items gesichert schlechter als Zellmittel,1.0,
+1b′,spearman_item Mittel LLM,0.19800087094564472,
+1b′,spearman_item Mittel LLM gezogen,0.10955891174502204,
+1b′,spearman_item Mittel Zellmittel,0.12761424714129305,
+1b′,Items mit LLM-ρ > Zellmittel-ρ,17.0,
+1b′,Items mit LLM-ρ gezogen > Zellmittel-ρ,10.0,
+1c,ME gesamt,-0.30123471204279817,
+1c,Items mit signifikantem Bias (Holm),16.0,
+1c,davon unterschätzt,14.0,
+1c,Items mit signifikantem Bias nach Zentrierung (Holm),20.0,
+1c,Items mit gleicher Richtung roh und zentriert (beide signifikant),11.0,
+2.0,Silhouette k-Means Mensch (k=2),0.16298264532156878,Null ohne Cluster 0.162
+2.0,Silhouette k-Means LLM (k=2),0.23781201828776544,Null nach Vorbild der Twins 0.195
+2.0,Silhouette Null nach Vorbild der Twins (k=2),0.19503577087883542,
+2.0,k mit max. Silhouette (Mensch),2.0,
+2.0,Silhouette LPA-Lösung Mensch (k=2),0.15877626687661578,
+2.0,Silhouette LPA-Lösung LLM (k=2),0.23567107127463657,
+1a,"MAE Twin gezogen, 20 neue Ziehungen (Mittel)",1.3489989895162309,Spanne 1.342–1.357
+2b,"tr(Σ) Mensch/LLM gesamt, 20 neue Ziehungen (Mittel)",1.4053656716443155,Spanne 1.393–1.421
+2a,Zentroid-Abstand gesamt,1.219448767034472,Split-Half 0.103
+2b,tr(Σ) Mensch/LLM gesamt,1.3853601883738098,7.20 / 9.97
+2b,Bures-Wasserstein gesamt,0.770134720192876,Split-Half 0.171
+2b,tr(Σ) Mensch/LLM-Erwartungswerte gesamt,0.6065109680329565,7.20 / 4.36
+2c,MMD² gesamt,0.058518409729003906,"Split-Half -0.0000, p 0.002"
+2a,Zentroid-Abstand Milieu 1,1.2831304414966753,Split-Half 0.135
+2b,tr(Σ) Mensch/LLM Milieu 1,1.2538028307131253,6.06 / 7.60
+2b,Bures-Wasserstein Milieu 1,0.5157808099432515,Split-Half 0.215
+2b,tr(Σ) Mensch/LLM-Erwartungswerte Milieu 1,0.48055308270084435,6.06 / 2.91
+2c,MMD² Milieu 1,0.073516845703125,"Split-Half 0.0000, p 0.002"
+2a,Zentroid-Abstand Milieu 2,1.3504119910263614,Split-Half 0.147
+2b,tr(Σ) Mensch/LLM Milieu 2,1.2584233845874138,5.70 / 7.17
+2b,Bures-Wasserstein Milieu 2,0.5979883025877795,Split-Half 0.224
+2b,tr(Σ) Mensch/LLM-Erwartungswerte Milieu 2,0.38522603084438733,5.70 / 2.19
+2c,MMD² Milieu 2,0.07983624935150146,"Split-Half -0.0000, p 0.002"
+2a,Abstand der menschlichen Milieus untereinander,2.2907518348575926,
+2a,Anteil Milieu 1 Mensch / LLM,0.5539345711759505,0.394
+2a,Anteil Milieu 2 Mensch / LLM,0.44606542882404954,0.606
+2d,ARI LPA (eigene Modelle),0.054008705881050195,Null 95-%-Quantil 0.0022
+2d,ARI LPA (Twins im menschlichen Modell),0.06121565919582688,
+2d,ARI k-Means (Robustheit),0.07715691419780388,
+2d,Twin im Milieu seiner Person,0.6171529619805481,Zufall 0.489
+2d,Jaccard Milieu 1,0.4245847176079734,Zufall 0.299
+2d,Jaccard Milieu 2,0.46642020948860136,Zufall 0.346
+2.0,Silhouette k-Means LLM-Erwartungswerte (k=2),0.44392788162429747,gezogen siehe ksel
+2d,Twin im Milieu seiner Person (Erwartungswerte),0.6330680813439434,
+2d,ARI LPA (Erwartungswerte),0.07027588996316878,
+2.0,LPA-BIC bestes k Mensch / LLM,6.0,LLM 6
+1d,ANOVA MAE ~ Geschlecht: η²,4.427276631952481e-06,"p(Holm) 0.9203, Kruskal p 0.8926"
+1d,ANOVA MAE ~ Alter: η²,0.007068117014530333,"p(Holm) 0.0091, Kruskal p 0.0055"
+1d,ANOVA MAE ~ Schulabschluss: η²,0.03937437842378878,"p(Holm) 0.0000, Kruskal p 0.0000"
+1d,ANOVA MAE ~ Wohnort: η²,0.0012972487816486525,"p(Holm) 0.4619, Kruskal p 0.1450"
+1d,ANOVA MAE ~ Region: η²,0.0067146262702609295,"p(Holm) 0.0004, Kruskal p 0.0001"
+1d,ANOVA MAE ~ Religion: η²,0.007109059679096063,"p(Holm) 0.0003, Kruskal p 0.0000"
+1d,ANOVA MAE ~ Werte-Milieu: η²,0.03978797345571043,"p(Holm) 0.0000, Kruskal p 0.0000"
+1d,Regression MAE ~ Demografie R²,0.05729492453340923,"F 12.33, p < 0,001, n 2243"
+Sensitivität,Aussage hängt von der Wahl ab: Twin genauer als fremder Twin (MAE),0.0,"Erwartungswert ja, gezogen ja, in 100% der neuen Ziehungen ja"
+Sensitivität,Aussage hängt von der Wahl ab: Twin genauer als Demografie-Mittelwert (MAE),0.0,"Erwartungswert nein, gezogen nein, in 0% der neuen Ziehungen ja"
+Sensitivität,Aussage hängt von der Wahl ab: Mehrheit der Twins genauer als ihr Demografie-Mittelwert (MAE),0.0,"Erwartungswert nein, gezogen nein, in 0% der neuen Ziehungen ja"
+Sensitivität,Aussage hängt von der Wahl ab: Twin enthält Information über die Person (individuelle Abweichung über fremdem Twin),0.0,"Erwartungswert ja, gezogen ja, in 100% der neuen Ziehungen ja"
+Sensitivität,Aussage hängt von der Wahl ab: Twin trifft die individuelle Abweichung mindestens so gut wie der Demografie-Mittelwert,1.0,"Erwartungswert ja, gezogen nein, in 0% der neuen Ziehungen ja"
+Sensitivität,Aussage hängt von der Wahl ab: Mehrheit der Twins trifft die individuelle Abweichung besser als ihr Demografie-Mittelwert,1.0,"Erwartungswert ja, gezogen nein, in 0% der neuen Ziehungen ja"
+Sensitivität,Aussage hängt von der Wahl ab: Twin trennt die Personen bei der Mehrheit der Fragen besser als der Demografie-Mittelwert,1.0,"Erwartungswert ja, gezogen nein, in 0% der neuen Ziehungen ja"
+Sensitivität,"Aussage hängt von der Wahl ab: Fehler bei der Mehrheit der Fragen gerichtet, überwiegend nach unten",0.0,"Erwartungswert ja, gezogen ja, in 100% der neuen Ziehungen ja"
+Sensitivität,"Aussage hängt von der Wahl ab: Schulabschluss hängt spürbar mit dem MAE zusammen (η² ≥ 0,01)",0.0,"Erwartungswert ja, gezogen ja, in 100% der neuen Ziehungen ja"
+1e,Within-Cell-SD Mensch (Mittel Items),1.1324169916277609,
+1e,Within-Cell-SD LLM (Mittel Items),1.2650323631934497,
+1e,"Items mit LLM-SD unter Bootstrap-2,5-%",3.0,
+1e,"Items mit LLM-SD über Bootstrap-97,5-%",17.0,
+1e,Within-Cell-SD LLM-Erwartungswerte (Mittel Items),0.5300885446619877,
+1e,"Items mit SD der LLM-Erwartungswerte unter Bootstrap-2,5-%",21.0,
+1e,Varianz zwischen Twin-Erwartungswerten (Mittel Items),0.5681039837532035,
+1e,Varianz durch die Ziehung (Mittel Items),1.2998808560458517,
+1e,Varianz der echten Antworten (Mittel Items),1.4032859373113649,
+1e,Anteil Varianz zwischen Twins an Twin-Gesamtvarianz,0.3041266565173602,
+Fazit 3,Werte mit Faktor gezogen gesichert > 1 (Bootstrap),8.0,
+Fazit 3,R² Demografie → SD Mensch / LLM,0.043080283121627594,0.105
+Fazit 3,R² Demografie → SD LLM-Erwartungswerte,0.40109990208171875,
+Fazit 3,R² Demografie → ST Mensch / LLM,0.09031951863615728,0.301
+Fazit 3,R² Demografie → ST LLM-Erwartungswerte,0.5780233255163059,
+Fazit 3,R² Demografie → HE Mensch / LLM,0.06459273464799598,0.278
+Fazit 3,R² Demografie → HE LLM-Erwartungswerte,0.6145088399315324,
+Fazit 3,R² Demografie → AC Mensch / LLM,0.07671707543683537,0.112
+Fazit 3,R² Demografie → AC LLM-Erwartungswerte,0.3601677306036164,
+Fazit 3,R² Demografie → PO Mensch / LLM,0.06370365145580292,0.077
+Fazit 3,R² Demografie → PO LLM-Erwartungswerte,0.29569270094010136,
+Fazit 3,R² Demografie → SE Mensch / LLM,0.09122820717899405,0.230
+Fazit 3,R² Demografie → SE LLM-Erwartungswerte,0.4997761776549442,
+Fazit 3,R² Demografie → CO Mensch / LLM,0.07209073038623104,0.254
+Fazit 3,R² Demografie → CO LLM-Erwartungswerte,0.5373170163846757,
+Fazit 3,R² Demografie → TR Mensch / LLM,0.14944917278292347,0.370
+Fazit 3,R² Demografie → TR LLM-Erwartungswerte,0.5961993379442636,
+Fazit 3,R² Demografie → BE Mensch / LLM,0.056929556844125595,0.068
+Fazit 3,R² Demografie → BE LLM-Erwartungswerte,0.33832861002577586,
+Fazit 3,R² Demografie → UN Mensch / LLM,0.10707367181329186,0.167
+Fazit 3,R² Demografie → UN LLM-Erwartungswerte,0.3118037367767307,
+Fazit 3,R² Demografie → x Mensch / LLM,0.10736677207969125,0.152
+Fazit 3,R² Demografie → y Mensch / LLM,0.1471616590240583,0.488
+Fazit 3,Demografisch erklärte Varianz (Summe Werte) Mensch / LLM-Erwartungswerte,0.6017212568443933,2.212
+Fazit 3,Demografisch erklärte Varianz (Summe Werte) LLM gezogen,2.218259002447002,
+Fazit 3,Verhältnis erklärte Varianz LLM-Erwartungswerte / Mensch,3.6757378583971536,gezogen 3.69
+Fazit 3,R² Demografie → Milieuzugehörigkeit Mensch / LLM,0.10433320024972781,0.357
+Fazit 3,R² Demografie → Milieuzugehörigkeit LLM-Erwartungswerte,0.4520807999331842,
